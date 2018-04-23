@@ -70,7 +70,7 @@
           </div>
         </div>
         <hello-world></hello-world>
-
+        <carousel></carousel>
 
 
         <!-- footer -->
@@ -212,7 +212,8 @@ import Carousel from './Carousel';
       }
     },
     components:{
-      'hello-world':HellowWorld
+      'hello-world':HellowWorld,
+      'carousel': Carousel
     }
   }
 </script>
