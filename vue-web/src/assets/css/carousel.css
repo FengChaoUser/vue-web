@@ -1,0 +1,76 @@
+.carousel-wrapper {
+  position: relative;
+  margin-bottom: 50px;
+  width: 900px;
+  height: 400px;
+}
+
+.carousel-wrapper :hover .control-content .prev, .next {
+  opacity: 1;
+}
+
+.carousel-wrapper .img-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carousel-wrapper .indicator-content {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  /* margin-left: -45px; */
+  /* width: 90px; */
+  height: 22px;
+  background: rgba(223, 223, 223, 0.6);
+  border-radius: 11px;
+
+}
+
+.carousel-wrapper .indicator-content .indicator-list {
+  overflow: hidden;
+
+}
+
+.carousel-wrapper .indicator-content .indicator-item {
+  float: left;
+  width: 30px;
+  height: 22px;
+
+}
+
+.carousel-wrapper .indicator-content .indicator-icon {
+  display: inline-block;
+  margin: 3px 0 0 7px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+
+}
+
+.carousel-wrapper .indicator-content .indicator-icon.active {
+  background: #df3526;
+}
+
+.carousel-wrapper .control-content .prev, .next {
+  position: absolute;
+  top: 170px;
+  width: 40px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: rgba(63, 64, 65, 0.7);
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+.carousel-wrapper .control-content .prev {
+  left: 0;
+}
+
+.carousel-wrapper .control-content .next {
+  right: 0;
+}

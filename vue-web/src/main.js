@@ -3,7 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import axios from 'axios'
+import * as money from './common/filters/monry'
 
+Object.keys(money).forEach(key => {
+  Vue.filter(key, money[key])
+})
+Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
