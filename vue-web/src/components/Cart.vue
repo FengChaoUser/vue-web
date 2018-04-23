@@ -5,12 +5,12 @@
         <div class="checkout-title">
           <span>购物车</span>
         </div>
-
+        <transition></transition>
         <!--table-->
         <div class="item-list-wrap">
           <div class="cart-item">
+            <ul>
             <div class="cart-item-head">
-              <ul>
                 <li>商品信息</li>
                 <li>商品金额</li>
                 <li>商品数量</li>
@@ -127,6 +127,7 @@
 <script>
 import HellowWorld from './HelloWorld';
 import Carousel from './Carousel';
+import Transition from './transition';
 
   export default {
     name: 'Cart',
@@ -213,7 +214,8 @@ import Carousel from './Carousel';
     },
     components:{
       'hello-world':HellowWorld,
-      'carousel': Carousel
+      'carousel': Carousel,
+      'transition': Transition
     }
   }
 </script>
